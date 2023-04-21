@@ -1,0 +1,68 @@
+* {
+    margin:0;
+    font-family:Roboto, Arial;
+}
+
+.counter-container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width: 100vw;
+    height:100vh;
+    background-color:lightblue;
+}
+
+#entered-people{
+    font-size:70px;
+    margin-bottom:10px;
+}
+
+#count-el {
+    font-size:70px;
+    margin-bottom:30px;
+}
+
+#increment-btn{
+    font-size:20px;
+    background-color:darkred;
+    color:white;
+    width:440px;
+    padding-top:15px;
+    padding-bottom:15px;
+    border:none;
+    border-radius:4px;
+    margin-bottom:15px;
+    cursor:pointer
+}
+
+#increment-btn:active{
+    margin-top:5px;
+    margin-bottom:10px;
+    box-shadow: 0px -5px 14px 0px rgba(0, 0, 0, 0.5)
+}
+
+#save-btn{
+    font-size:20px;
+    background-color:green;
+    color:white;
+    width:440px;
+    padding-top:15px;
+    padding-bottom:15px;
+    border:none;
+    border-radius:4px;
+    margin-bottom:10px;
+    cursor:pointer
+}
+
+#save-btn:active{
+    box-shadow: 0px -5px 14px 0px rgba(0, 0, 0, 0.5);
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+
+#previous-entries{
+    font-size:40px;
+    font-weight:bold;
+}
