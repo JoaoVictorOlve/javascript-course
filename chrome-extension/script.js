@@ -2,13 +2,20 @@ const inputEl = document.querySelector("#input-el")
 const inputBtn = document.querySelector("#input-btn")
 const ulEl = document.querySelector("#ul-el")
 
-let myLeads = ["www.awesomelead.com", "www.steam.com", "www.jefferson.com"]
+let myLeads = []
 
 inputBtn.addEventListener("click", function(){
     myLeads.push(inputEl.value)
-    console.log(myLeads)
+    renderLeads()
+    inputEl.value = ""
 })
 
-for (let i = 0; i < myLeads.length; i++)[
-    ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
-]
+function renderLeads(){
+    let listItems = ""
+
+for (let i = 0; i < myLeads.length; i++){
+    listItems += `<li><a target='_blank' href='${myLeads[i]}' > ${myLeads[i]} </a></li>`
+    }
+
+    ulEl.innerHTML = listItems
+}
